@@ -1,9 +1,11 @@
+// C++ program for implementation of Insertion Sort
 #include <iostream>
 #include <fstream>
 #include <vector>
 
 using namespace std;
 
+/* Function to sort an array using insertion sort */
 void insertionSort(vector<int>& arr)
 {
     int n = arr.size();
@@ -27,6 +29,7 @@ int main()
 {
     vector<int> arr;
 
+    // Use a file to input the test cases.
     ifstream f("test_cases.txt");
 
     int x;
@@ -38,6 +41,7 @@ int main()
 
     insertionSort(arr);
 
+    // Prints the sorted array
     for(int x : arr){
         cout << x << " ";
     }
