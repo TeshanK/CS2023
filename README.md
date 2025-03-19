@@ -3,3 +3,4 @@
 
 - Insertion Sort ✅
 - Bubble Sort ✅
+- Optimized Bubble Sort ✅
