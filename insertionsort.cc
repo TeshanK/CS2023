@@ -1,9 +1,4 @@
-// C++ program for implementation of Insertion Sort
-#include <iostream>
-#include <fstream>
-#include <vector>
-
-using namespace std;
+#include "driver.h"
 
 /* Function to sort an array using insertion sort */
 void insertionSort(vector<int>& arr)
@@ -23,28 +18,4 @@ void insertionSort(vector<int>& arr)
         arr[i + 1] = key;
     }
 
-}
-
-int main()
-{
-    vector<int> arr;
-
-    // Use a file to input the test cases.
-    ifstream f("test_cases.txt");
-
-    int x;
-    while(f >> x){
-        arr.push_back(x);
-    }
-
-    f.close();
-
-    insertionSort(arr);
-
-    // Prints the sorted array
-    for(int x : arr){
-        cout << x << " ";
-    }
-
-    return 0;
 }
